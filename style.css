@@ -1,0 +1,266 @@
+:root {
+    --primary: rgb(17, 24, 39);
+    --secondary: rgb(35, 52, 70);
+    --terciary1: rgb(239, 68, 68);
+    --terciary2: rgb(253, 186, 116);
+    --terciary3: rgb(16, 185, 129);
+    --blanco: #fff;
+    --negro: #000;
+
+}
+
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.container {
+    overflow-x: hidden;
+}
+
+/* Header */
+
+h1,
+p,
+h2,
+h3 {
+    margin: 0rem;
+}
+
+h2 {
+    font-size: 2.7rem;
+    color: var(--terciary3);
+}
+
+p {
+    font-size: 1.9rem;
+    color: var(--blanco);
+}
+
+
+header {
+    padding: 1rem 1.5rem;
+    background-color: var(--primary);
+    display: flex;
+    color: var(--blanco);
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.3rem;
+    border-bottom: 1px var(--terciary3) solid;
+    box-shadow: 0px 1px 3px var(--secondary);
+
+}
+
+
+.logo {
+    margin: 0rem;
+    width: 10rem;
+}
+
+.headerButtons {
+    display: flex;
+    gap: 1rem;
+}
+
+.headerButtons__Buttons {
+    border: none;
+    background-color: var(--primary);
+    color: var(--blanco);
+
+}
+
+.headerButtons__Buttons--theme {
+    display: flex;
+    background-color: var(--terciary3);
+    border-radius: 10rem;
+    width: 6rem;
+    height: 3rem;
+    justify-content: end;
+    align-self: center;
+    border: 1px var(--secondary) solid;
+}
+
+.fa-moon {
+    margin-top: 0.2rem;
+    padding: 0.5rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    font-size: 60%;
+
+}
+
+.fa-sun {
+    margin-top: 0.2rem;
+    padding: 0.5rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    font-size: 60%;
+    visibility: hidden;
+}
+
+.headerButtons__Buttons--menu {
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+
+/* Menu desplegable */
+#menuNav {
+    display: none;
+    margin: auto auto;
+    text-align: center;
+    background-color: var(--secondary);
+
+}
+
+.menuNav_item {
+    padding-top: 1rem;
+    text-decoration: none;
+    color: var(--blanco);
+    display: block;
+    font-size: 2.3rem;
+}
+
+
+
+.buttonCurri {
+
+    margin: 1.2rem 0rem;
+    border-radius: 10rem;
+    background-color: var(--terciary3);
+    border: none;
+}
+
+.buttonCurri a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--blanco);
+    display: block;
+    font-size: 2.3rem;
+}
+
+.buttonCurry__icon {
+    margin-bottom: 0.2rem;
+}
+
+
+
+/*Intro*/
+
+.intro img {
+    width: 100%;
+
+}
+
+.intro__desc {
+    background-color: var(--secondary);
+    padding: 3rem;
+}
+
+
+/* Skills */
+
+.skills {
+
+    background-color: var(--terciary3);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.5rem;
+
+
+}
+
+.skills h2 {
+    padding-top: 1rem;
+    color: var(--blanco);
+}
+
+
+.skills__icons {
+
+    width: 200%;
+    display: flex;
+    background-color: var(--terciary3);
+    justify-content: flex-start;
+    align-items: center;
+    transition: all .5s ease;
+    transform: translateX(0%);
+
+
+}
+
+.skills__icons div {
+    padding: 1rem 1rem 0rem 1rem;
+    width: calc(100%/2);
+    display: flex;
+    justify-content: center;
+
+}
+
+.skills__icons--img div {
+    background-color: var(--blanco);
+    padding: 0.8rem;
+    width: calc(100% / 3.3333);
+    height: 11.64rem;
+    border-radius: 5%;
+    box-shadow: 0px 5px 10px;
+    margin: 0.4rem;
+}
+
+.imgIcons {
+    width: 90%;
+}
+
+ul {
+    padding: 0rem;
+}
+
+.Desp {
+    padding: 0rem;
+    display: inline;
+    list-style: none;
+    margin: 1rem;
+
+}
+
+.Desp__btn {
+
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    background-color: var(--blanco);
+    border: none;
+    cursor: pointer;
+}
+
+.Desp__btn:focus {
+    background-color: var(--secondary);
+
+}
+
+
+/* Portafolio gris*/
+
+
+
+
+/* Acerca de mi blanco*/
+
+
+
+#Bootstrap{
+    font-size : 1.8rem;
+    color: blue;
+    
+}
+
+/*footer color primario*/
