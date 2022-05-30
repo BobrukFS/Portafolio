@@ -4,11 +4,11 @@ let menuNav = document.getElementById("menuNav");
 let conditionMenu = false;
 let buttonNav = document.getElementsByClassName("headerButtons__Buttons--menu");
 
-function openMenu () {
-    if(conditionMenu == false){
+function openMenu() {
+    if (conditionMenu == false) {
         menuNav.style.display = "block";
         conditionMenu = true;
-    }else{
+    } else {
         menuNav.style.display = "none";
         conditionMenu = false;
     }
@@ -26,17 +26,20 @@ let iconMoon = document.getElementsByClassName("fa-moon");
 let iconSun = document.getElementsByClassName("fa-sun");
 let btnTheme = document.getElementsByClassName("headerButtons__Buttons--theme");
 
-function modoOscuro(){
-if(conditionTheme == false){
-    iconMoon[0].style.visibility = "hidden";
-    iconSun[0].style.visibility = "visible";
-    conditionTheme = true;
+function modoOscuro() {
+    if (conditionTheme == false) {
+        iconMoon[0].style.visibility = "hidden";
+        iconSun[0].style.visibility = "visible";
+        btnTheme[0].style.background = "white";
+        conditionTheme = true;
 
-}else{
-    iconSun[0].style.visibility = "hidden";
-    iconMoon[0].style.visibility = "visible";
-    conditionTheme = false;
-}
+    } else {
+        iconSun[0].style.visibility = "hidden";
+        iconMoon[0].style.visibility = "visible";
+        btnTheme[0].style.background = "var(--secondary)";
+        conditionTheme = false;
+
+    }
 }
 
 btnTheme[0].addEventListener("click", modoOscuro);
@@ -47,39 +50,50 @@ btnTheme[0].addEventListener("click", modoOscuro);
 let btnSkills = document.querySelectorAll(".Desp__btn");
 let containerSkills = document.getElementsByClassName("skills__icons")
 
-btnSkills.forEach((cadaPunto,i) => {
-    btnSkills[i].addEventListener("click", ()=> {
+btnSkills.forEach((cadaPunto, i) => {
+    btnSkills[i].addEventListener("click", () => {
         let posicion = i;
-        let desplazamiento = posicion * -50
+        let desplazamiento = posicion * -33.333
         containerSkills[0].style.transform = `translateX(${desplazamiento}%)`;
 
     });
-    
+
 
 });
 
 
 
-//Esto funciona mal ya que hay que tocarlas por orden, esto es solo para la pagina web. 
 
-/*
 let img = document.querySelectorAll(".imgIcons");
 let divImg = document.querySelectorAll(".divImg");
-let titulos = ["HTML", "CSS", "Bootstrap"];
-let colores = ["orange", "green", "violet"]
-
-img.forEach((cadaImagen, i) =>{
-    img[i].addEventListener("mouseenter", ()=>{
-        
-        img[i].style.display = "none";
-        divImg[i].innerHTML = `<h2>${titulos[i]}</h2>`;
-        let h2Img = document.querySelectorAll(`div.divImg > h2`)
-        h2Img[i].setAttribute("id", `${titulos[i]}`);
-        console.log(divImg[i]);
-        h2Img[i].style.color = `${colores[i]}`;
-
-        
+let titulos = ["HTML", "CSS", "Bootstrap", "Sass", "Github", "Javascript"];
+let colores = ["#f4470b", "#0068ba", "#754fad", "#ce6b9e", "#000000", "#e9d44d"]
+let imagenes = ["html-5.png", "css3.png", "bootstrap.png", "sass.png", "github.png", "js.png"]
+let conditionName = false;
 
 
-    })
-})*/
+
+
+
+img.forEach((cadaImagen, i) => {
+    
+            divImg[i].addEventListener("mouseenter", () => {
+            img[i].style.display = "none";
+            divImg[i].innerHTML = `<h2 id="${titulos[i]}">${titulos[i]}</h2>`;
+            let h2Img = document.querySelector(`#${titulos[i]}`);
+            h2Img.style.color = `${colores[i]}`;
+            
+        })
+})
+
+
+
+img.forEach((cadaImagen, i) => {
+divImg[i].addEventListener("mouseleave", () => {
+        let h2Img = document.querySelector(`#${titulos[i]}`);
+        let imagen = `<img class="imgIcons" src="galeria/${imagenes[i]}">`
+        h2Img.style.display = "none";
+        divImg[i].innerHTML = imagen;
+        console.log(img);
+    }) 
+})
