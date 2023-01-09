@@ -46,35 +46,33 @@ p {
 /* Header button */
 
 .header__button {
+    display: flex;
     width: 5.5rem;
     height: 5.5rem;
     border: none;
     background-color: transparent;
     z-index: 1 ;
     padding: 0rem;
+    justify-content: end;
+    align-items: center;
 }
+
 
 .header__button:hover{
     cursor: pointer;
 }
 
-.header__buttonbox{
-    display: flex;
-    position: relative;
-    width: 50px;
-    justify-content: end;
-}
 
 .header__buttonicon {
-    width: 60%;
+    width: 10%;
     height: 2.5px;
     background-color: var(--primary);
     position: absolute;
-    left: 29px;
     transition: background-color 0.5s linear;
+    
 }
 
-.primario .header__buttonicon::before {
+.header__buttonicon::before {
     display: block;
     content: "";
     width: 120%;
@@ -82,23 +80,19 @@ p {
     left: -5px;
     top: -10px;
     height: 2.5px;
+}
+
+.primario .header__buttonicon::before {
     background-color: var(--primary);
     transition: background-color 0.5s linear;
 }
 
 .blanco .header__buttonicon::before {
-    display: block;
-    content: "";
-    width: 120%;
-    position: absolute;
-    left: -5px;
-    top: -10px;
-    height: 2.5px;
     background-color: var(--white);
     transition: background-color 0.5s linear;
 }
 
-.primario .header__buttonicon::after {
+.header__buttonicon::after {
     display: block;
     content: "";
     width: 80%;
@@ -106,18 +100,14 @@ p {
     position: absolute;
     left: 6px;
     bottom: -10px;
+}
+
+.primario .header__buttonicon::after {
     background-color: var(--primary);
     transition: background-color 0.25s linear;
 }
 
 .blanco .header__buttonicon::after {
-    display: block;
-    content: "";
-    width: 80%;
-    height: 2.5px;
-    position: absolute;
-    left: 6px;
-    bottom: -10px;
     background-color: var(--white);
     transition: background-color 0.25s linear;
 }
@@ -130,36 +120,40 @@ p {
     background-color: var(--primary);
     width: 75%;
     height: 100vh;
-    margin: 0vw 0vw 0vw 25vw;
     align-items: center;
     justify-content: center;
     z-index: 0;
     position: fixed;
     top: 0px;
-    bottom: 0px;
     right: 0px;
     visibility: visible;
-    transform: translateX(100vw);
+    transform: translateX(75vw);
     transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+.menu.active{
+    transform: translateX(0vw);
 }
 
 .menu__enlaces {
     display: block;
     text-align: center;
     font-size: 2.5rem;
-    padding-bottom: 8rem;
+    margin-bottom: 8rem;
     color: var(--white);
     text-decoration: none;
 }
 
 .menu__enlaces--contact {
     padding-bottom: 0rem;
+    margin: 0rem;
 }
 
 .menu__enlaces--cv {
     border: 1px solid var(--secondary);
     padding: 1.5rem;
     border-radius: 1rem;
+    margin: 0rem;
 }
 
 .menu__p {
@@ -174,9 +168,5 @@ p {
 
 .menu__nav p:nth-child(3) {
     margin-left: 1.5rem;
-}
-
-.menu.active{
-    transform: translateX(0vw);
 }
 
