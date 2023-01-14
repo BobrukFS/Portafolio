@@ -17,7 +17,7 @@ body {
     overflow-x: hidden;
 }
 
-p {
+h1, h2, h3, h4, p {
     margin: 0;
 }
 
@@ -159,14 +159,111 @@ p {
 .menu__p {
     font-size: 1.8rem;
     color: var(--terciary);
+    margin-left: -1rem;
 }
 
 .menu__p--contact {
     text-align: end;
-    margin: -1rem 1.5rem 10rem;
+    margin: -0.5rem 0.5rem 10rem;
 }
 
 .menu__nav p:nth-child(3) {
-    margin-left: 1.5rem;
+    margin-left: .5rem;
 }
 
+/* Main */
+
+/* Introduce */
+
+.introduce { 
+    background-color: var(--white);
+    text-align: start;
+    padding: 6rem 2rem 5rem;
+    font-weight: bold;
+}
+
+.introduce__h1 {
+    font-size: 2rem;
+    color: var(--terciary);
+    margin-bottom: .5rem;
+}
+
+.introduce__h2 {
+    font-size: 3.5rem;
+    color: var(--primary);
+    margin-bottom: .5rem;
+}
+
+.introduce__h3 {
+    font-size: 3.5rem;
+    color: var(--secondary);
+    margin-bottom: 3rem;
+    line-height: 1;
+}
+
+.introduce__p {
+    font-size: 2rem;
+    color: var(--secondary);
+    font-weight: normal;
+    padding-left: 2rem;
+}
+
+.introduce div { 
+    display: flex;
+    margin-bottom: 4rem;
+    border-left: 1px solid var(--terciary);
+    box-shadow: 10px 0px 4px -10px var(--terciary) inset ;
+
+}
+
+
+
+.introduce__btn {
+    text-decoration: none;
+    color: var(--terciary);
+    font-size: 2rem;
+    border: 1px solid var(--primary);
+    background-color: #4b5780;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+/* Socials */
+
+.socials div {
+    margin: .5rem 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.socials div:nth-child(2){
+    justify-content: end;
+}
+
+.socials__icon {
+    font-size: 4rem;
+    color: var(--terciary);
+    padding: .5rem;
+    
+}
+
+.socials div:nth-child(1):before {
+    content: "";
+    background-color: var(--primary);
+    width: 50%;
+    height: 2.5px;
+    position: relative;
+    margin-right: 2rem;
+    
+}
+
+.socials div:nth-child(2)::after {
+    content: "";
+    background-color: var(--primary);
+    width: 50%;
+    height: 2.5px;
+    position: relative;
+    margin-left: 2rem;
+    
+}
