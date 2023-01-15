@@ -21,6 +21,18 @@ h1, h2, h3, h4, p {
     margin: 0;
 }
 
+p{
+    font-size: 2rem;
+    color: #777777;
+}
+
+h2 {
+    font-size: 3.5rem;
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+    margin-bottom: 1rem;
+}
+
 *,
 *:before,
 *:after {
@@ -216,9 +228,8 @@ h1, h2, h3, h4, p {
 
 }
 
-
-
 .introduce__btn {
+    display: block;
     text-decoration: none;
     color: var(--terciary);
     font-size: 2rem;
@@ -226,19 +237,17 @@ h1, h2, h3, h4, p {
     background-color: #4b5780;
     padding: 1rem 2rem;
     border-radius: 1rem;
+    width: fit-content;
+    margin: auto auto ;
 }
 
 /* Socials */
 
-.socials div {
-    margin: .5rem 2rem;
+.socials { 
+    padding: 1rem 1rem;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-}
-
-.socials div:nth-child(2){
-    justify-content: end;
 }
 
 .socials__icon {
@@ -246,24 +255,73 @@ h1, h2, h3, h4, p {
     color: var(--terciary);
     padding: .5rem;
     
-}
-
-.socials div:nth-child(1):before {
-    content: "";
-    background-color: var(--primary);
-    width: 50%;
-    height: 2.5px;
-    position: relative;
-    margin-right: 2rem;
     
 }
 
-.socials div:nth-child(2)::after {
-    content: "";
-    background-color: var(--primary);
-    width: 50%;
+.socials::after {
+    background-color: var(--terciary);
+    width: 80%;
     height: 2.5px;
+    content: "";
     position: relative;
-    margin-left: 2rem;
+    margin: 0rem 1rem;
+    z-index: -1;
+}
+
+/* About me */
+
+.aboutme {
     
+    padding: 4.5rem 2rem;
+}
+
+.aboutme__p:nth-child(4){
+    margin-bottom: 1rem;
+}
+
+.img {
+    border: 2px solid var(--terciary);
+    border-radius: 4px;
+    z-index: -1;
+    width: 18rem;
+    margin: auto auto;
+    margin-bottom: 1rem;
+    position: relative;
+    top: -15px;
+    right: -25px;
+    
+}
+
+.img__photo {
+    width: 18rem;
+    position: relative;
+    top: 20px;
+    right: 25px;
+    border-radius: 4px;
+
+}
+
+.aboutme__h3 {
+    font-size: 2rem;
+    color: #4b5780;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.skills__icon {
+    font-size: 4rem;
+    color: var(--terciary);
+}
+
+/* Projects */
+
+.projects{
+    padding: 2rem 2rem 6rem;
 }
