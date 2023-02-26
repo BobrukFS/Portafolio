@@ -1,0 +1,333 @@
+
+
+@media (min-width: 768px) { 
+
+    /*Header*/
+
+    .header {
+        padding: 2vw 1.5rem;
+    }
+
+    .header__img {
+        width: 13vw;
+    }
+
+    .header__button {
+        display: none;
+    }
+
+    /* Menu */
+
+    .menu {
+        position: static;
+        visibility: visible;
+        height: auto;
+        width: auto;
+        background-color: var(--white);
+        transform: translateX(0);
+    }
+
+    .menu__enlaces {
+        display: inline-block;
+        margin: auto 1.5rem;
+        color: var(--primary);
+        font-size: clamp(2.3rem, 3vw, 3rem);
+        font-weight: 400;
+    }
+
+    .menu__enlaces:hover {
+        text-decoration: underline var(--terciary);
+        text-underline-offset: 4px;
+        color: var(--terciary);
+    }
+
+    .menu__p {
+        display: none;
+    }
+
+    .menu__enlaces--cv {
+        padding: 1rem;
+        margin: auto 0rem auto 1.5rem;
+        color: var(--white);
+        background-color: var(--primary);
+        border-radius: 1rem;
+        border: none;
+    }
+
+    .menu__enlaces--cv:hover {
+        text-decoration: none;
+        background-color: var(--terciary);
+        color: var(--white);
+    }
+
+    main {
+        margin: auto 10rem;
+    }
+    /*Introduce and socials */
+    .introduce {
+        padding: calc(72.7vw - clamp(36rem, 47vw, 51rem)) 4rem;
+    }
+
+    .introduce__h1 {
+        font-size: 2.5rem;
+    }
+
+    .introduce__h2 {
+        font-size: 6rem;
+    }
+
+    .introduce__h3 {
+        font-size: 4.5rem;
+    }
+
+    .introduce__p {
+        font-size: 2.2rem;
+
+    }
+
+    .introduce__btn {
+
+        font-size: clamp(2.5rem, 3.6vw, 4rem);
+
+    }
+
+    .socials {
+        display: block;
+        position: fixed;
+        left: 35px;
+        bottom: 110px;
+        margin-left: 0;
+    }
+
+    .socials__icon {
+        font-size: 4.5rem;
+        display: block;
+
+    }
+
+    .socials::after {
+        position: fixed;
+        width: 2px;
+        height: 15rem;
+        margin: 0 2.7rem;
+    }
+
+    .introduce__contact {
+        display: block;
+        position: fixed;
+        right: 35px;
+        bottom: 110px;
+    }
+
+    .introduce__contact p{
+        display: block;
+        writing-mode: vertical-rl;
+        font-style: normal;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    .introduce__contact::after{
+        position: absolute;
+        content: "";
+        background-color: var(--terciary);
+        width: 2px;
+        height: 15rem;
+        margin: 0 1.3rem;
+        
+    }
+  
+    /* Cards Project */
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0rem 5rem;
+
+    }
+
+    .card {
+        flex: 0 0 calc(46%);
+        max-width: 40vw;
+        margin: 2rem 0rem;
+    }
+
+    .card__figcaption h3 {
+        font-size: clamp(4rem, 5vw, 4.5rem);
+    }
+
+    .card__figcaption p {
+        font-size: clamp(2rem, 2.9vw, 3rem);
+    }
+
+    .card__icons {
+        font-size: clamp(3rem, 4vw, 4rem);
+    }
+}
+
+@media (min-width: 1440px) { 
+    
+    main {
+        margin: auto 14rem;
+    }
+    /* Header */
+
+    .header {
+        padding: 2rem 2rem;
+    }
+
+    .header__img {
+        width: 10rem;
+    }
+
+    /* Introduce and Socials */
+ 
+
+    .introduce {
+        padding: 16.5vw 0rem
+    }
+
+    .introduce__h1 {
+        font-size: 3rem;
+    }
+
+    .introduce__h2 {
+        font-size: 7rem;
+    }
+
+    .introduce__h3 {
+        font-size: 5.5rem;
+    }
+
+    .introduce__p {
+        font-size: 2.7rem;
+    }
+
+
+    .introduce__btn {
+
+        font-size: 3.5rem;
+
+    }
+
+    .socials {
+        display: block;
+        position: fixed;
+        left: 45px;
+        bottom: 240px;
+        margin-left: 0;
+    }
+
+    .socials__icon {
+        font-size: 4.5rem;
+        display: block;
+
+    }
+
+    .socials::after {
+        position: fixed;
+        width: 2px;
+        height: 24rem;
+        margin: 0 2.7rem;
+    }
+
+    /* Cards project*/
+
+    .card {
+        max-width: 30vw;
+        flex: 0 0 calc(30%);
+    }
+
+    .card__figcaption h3 {
+        font-size: clamp(5rem, 3.7vw, 10rem);
+    }
+
+    .card__figcaption p {
+        font-size: clamp(2rem, 2vw, 5.5rem);
+    }
+
+    .card__icons {
+        font-size: clamp(3.5rem, 2.6vw, 7rem);
+    }
+}
+
+@media (min-width: 2560px) { 
+    main {
+        margin: auto 25rem;
+    }
+    /*Header */
+
+    .header {
+        padding: 2rem 5rem;
+    }
+
+    .header__img {
+        width: 16rem;
+    }
+
+    /*Menu */
+    .menu__enlaces {
+        margin: auto 4rem;
+        font-size: 4rem;
+    }
+
+    .menu__enlaces--cv {
+        margin: auto 0rem auto 4rem;
+    }
+
+     /* Introduce and Socials */
+ 
+
+     .introduce {
+        padding: 37rem 0rem
+    }
+
+    .introduce__h1 {
+        font-size: 4rem;
+    }
+
+    .introduce__h2 {
+        font-size: 10rem;
+    }
+
+    .introduce__h3 {
+        font-size: 8rem;
+    }
+
+    .introduce__p {
+        font-size: 3.5rem;
+    }
+
+
+    .introduce__btn {
+
+        font-size: 4.8rem;
+
+    }
+
+    .socials {
+        display: block;
+        position: fixed;
+        left: 100px;
+        bottom: 360px;
+        margin-left: 0;
+    }
+
+    .socials__icon {
+        font-size: 7rem;
+        display: block;
+
+    }
+
+    .socials::after {
+        width: 3px;
+        height: 36rem;
+        margin: 0 3.9rem;
+    }
+
+    .introduce__contact p{
+        font-size: 3rem;
+    }
+
+}

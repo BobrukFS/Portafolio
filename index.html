@@ -6,32 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/002d43efc8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <title>Exequiel Bobruk</title>
+    <link href="mq.css" rel="stylesheet">
+
+    <title>Exequiel Bobruk - Portafolio</title>
 </head>
 
 <body>
     <header>
-
         <div class="header">
             <img src="Img/pngegg.png" alt="logo" class="header__img">
-            <button class="header__button primario">
-                <div class="header__buttonicon"></div>
+            <button class="header__button button off">
+                <div class="button__icon"></div>
             </button>
+
+            <aside class="menu">
+                <nav class="menu__nav">
+                    <p class="menu__p">My</p>
+                    <a href="#" class="menu__enlaces">Experience</a>
+                    <p class="menu__p">My</p>
+                    <a href="#" class="menu__enlaces">Projects</a>
+                    <a href="#" class="menu__enlaces menu__enlaces--contact">Contact</a>
+                    <p class="menu__p menu__p--contact">me</p>
+                    <a href="#" class="menu__enlaces menu__enlaces--cv">Curriculum</a>
+                </nav>
+            </aside>
         </div>
 
-        <aside class="menu">
-            <nav class="menu__nav">
-                <p class="menu__p">My</p>
-                <a href="#" class="menu__enlaces">Experience</a>
-                <p class="menu__p">My</p>
-                <a href="#" class="menu__enlaces">Projects</a>
-                <a href="#" class="menu__enlaces menu__enlaces--contact">Contact</a>
-                <p class="menu__p menu__p--contact">me</p>
-                <a href="#" class="menu__enlaces menu__enlaces--cv">Curriculum</a>
-            </nav>
-        </aside>
+      
     </header>
 
     <main>
@@ -45,14 +51,20 @@
                     products at Upstatement.</p>
             </div>
             <a href="#" class="introduce__btn">Conoce mis proyectos!</a>
+      
+            <aside class="introduce__socials socials">
+                <i class="fa-brands fa-linkedin socials__icon"></i>
+                <i class="fa-brands fa-square-twitter socials__icon "></i>
+                <i class="fa-brands fa-github socials__icon "></i>
+                <i class="fa-brands fa-codepen socials__icon"></i>
+            </aside>
+
+            <aside class="introduce__contact">
+                <p>bobrukfs@gmail.com.ar</p>
+            </aside>
         </section>
 
-        <section class="socials">
-            <i class="fa-brands fa-linkedin socials__icon"></i>
-            <i class="fa-brands fa-square-instagram socials__icon"></i>
-            <i class="fa-brands fa-square-twitter socials__icon "></i>
-            <i class="fa-brands fa-github socials__icon "></i>
-        </section>
+        
 
 
         <section class="aboutme">
@@ -86,10 +98,101 @@
         </section>
 
         <section class="projects">
-            <h2 class="projects__h2">Mis Projectos</h2>
+            <h2 class="projects__h2">My projects</h2>
+            <div class="card">
+                <figure class="card__figure">
+                    <img src="	https://mmedinasv05.github.io/Portafolio/static/media/1-min.6b9d16e0.png" alt="img"
+                        class="card__img">
+                    <figcaption class="card__figcaption">
+                        <section class="card__introduce">
+                            <h3>Page Web</h3>
+                            <p>HTML - CSS - JavaScript</p>
+                        </section>
+                        <nav class="card__nav">
+                            <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                    class="fa-brands fa-github card__icons"></i></a>
+                            <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                    class="fa-solid fa-globe card__icons"></i></a>
+                        </nav>
+                    </figcaption>
+                </figure>
+            </div>
 
+            <div class="card">
+                <figure class="card__figure">
+                    <img src="	https://mmedinasv05.github.io/Portafolio/static/media/1-min.6b9d16e0.png" alt="img"
+                        class="card__img">
+                    <figcaption class="card__figcaption">
+                        <section class="card__introduce">
+                            <h3>Page Web</h3>
+                            <p>HTML - CSS - JavaScript</p>
+                        </section>
+                        <nav class="card__nav">
+                            <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                    class="fa-brands fa-github card__icons"></i></a>
+                            <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                    class="fa-solid fa-globe card__icons"></i></a>
+                        </nav>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="card">
+                <figure class="card__figure">
+                    <img src="	https://mmedinasv05.github.io/Portafolio/static/media/1-min.6b9d16e0.png" alt="img"
+                        class="card__img">
+                    <figcaption class="card__figcaption ">
+                        <section class="card__introduce">
+                            <h3>Page Web</h3>
+                            <p>HTML - CSS - JavaScript</p>
+                        </section>
+                        <nav class="card__nav">
+                            <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                    class="fa-brands fa-github card__icons"></i></a>
+                            <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                    class="fa-solid fa-globe card__icons"></i></a>
+                        </nav>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="card ">
+                <figure class="card__figure">
+                    <img src="	https://mmedinasv05.github.io/Portafolio/static/media/1-min.6b9d16e0.png" alt="img"
+                        class="card__img">
+                    <figcaption class="card__figcaption ">
+                        <section class="card__introduce">
+                            <h3>Page Web</h3>
+                            <p>HTML - CSS - JavaScript</p>
+                        </section>
+                        <nav class="card__nav">
+                            <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                    class="fa-brands fa-github card__icons"></i></a>
+                            <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                    class="fa-solid fa-globe card__icons"></i></a>
+                        </nav>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="experience">
+            <h2 class="experience__h2">My experience</h2>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer__social">
+
+            <i class="fa-brands fa-linkedin footer__icon"></i>
+            <i class="fa-brands fa-square-instagram footer__icon"></i>
+            <i class="fa-brands fa-square-twitter footer__icon "></i>
+            <i class="fa-brands fa-github footer__icon "></i>
+
+        </div>
+
+        <p>Desarrollado por Exequiel Bobruk</p>
+    </footer>
 
     <script src="script.js"></script>
 
