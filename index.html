@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/002d43efc8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Merriweather:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link href="mq.css" rel="stylesheet">
@@ -17,181 +19,357 @@
 </head>
 
 <body>
+
     <header>
+
         <div class="header">
+
             <img src="Img/pngegg.png" alt="logo" class="header__img">
-            <button class="header__button button off">
+            <button class="button off">
                 <div class="button__icon"></div>
             </button>
 
             <aside class="menu">
                 <nav class="menu__nav">
+                    <a href="#about" class="menu__enlaces menu__enlaces--about">About</a>
+                    <p class="menu__p menu__p--about">me</p>
                     <p class="menu__p">My</p>
-                    <a href="#" class="menu__enlaces">Experience</a>
-                    <p class="menu__p">My</p>
-                    <a href="#" class="menu__enlaces">Projects</a>
-                    <a href="#" class="menu__enlaces menu__enlaces--contact">Contact</a>
+                    <a href="#projects" class="menu__enlaces">Projects</a>
+                    <a href="contact.html" class="menu__enlaces menu__enlaces--contact">Contact</a>
                     <p class="menu__p menu__p--contact">me</p>
                     <a href="#" class="menu__enlaces menu__enlaces--cv">Curriculum</a>
                 </nav>
             </aside>
+
         </div>
 
-      
     </header>
 
     <main>
+
         <section class="introduce">
-            <h1 class="introduce__h1">Hola, mi nombre es</h1>
-            <h2 class="introduce__h2">Exequiel Bobruk</h2>
-            <h3 class="introduce__h3"> I build things for the web.</h3>
+
             <div>
-                <p class="introduce__p">I’m a software engineer specializing in building (and occasionally designing)
-                    exceptional digital experiences. Currently, I’m focused on building accessible, human-centered
-                    products at Upstatement.</p>
+                <h1 class="introduce__h1">Hola, mi nombre es</h1>
+                <h2 class="introduce__h2">Exequiel Bobruk</h2>
+                <h3 class="introduce__h3"> I build things for the web.</h3>
+                <div class="desc">
+                    <p class="desc__p">I’m a software engineer specializing in building (and occasionally
+                        designing)
+                        exceptional digital experiences. Currently, I’m focused on building accessible, human-centered
+                        products at Upstatement.</p>
+                </div>
+                <a href="#projects" class="introduce__btn">Conoce mis proyectos!</a>
             </div>
-            <a href="#" class="introduce__btn">Conoce mis proyectos!</a>
-      
-            <aside class="introduce__socials socials">
-                <i class="fa-brands fa-linkedin socials__icon"></i>
-                <i class="fa-brands fa-square-twitter socials__icon "></i>
-                <i class="fa-brands fa-github socials__icon "></i>
-                <i class="fa-brands fa-codepen socials__icon"></i>
-            </aside>
 
-            <aside class="introduce__contact">
-                <p>bobrukfs@gmail.com.ar</p>
-            </aside>
         </section>
 
-        
+        <section id="about" class="aboutme">
 
+            <h2 class="aboutme__h2">About Me</h2>
 
-        <section class="aboutme">
-
-            <h2 class="aboutme__h2">Sobre mi</h2>
-
-
-            <p class="aboutme__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae illo tempora,
-                voluptatibus beatae ratione ullam Labore dolore tempora itaque ipsam</p>
-            <div class="aboutme__img img">
-                <img src="https://yt3.googleusercontent.com/ytc/AMLnZu88nBmIH1JWt390yVlr16gnrYcnIPX5fP8B5MsoUw=s900-c-k-c0x00ffffff-no-rj"
-                    alt="foto" class="img__photo">
+            <div class="aboutme__desc">
+                <p class="aboutme__p">Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p>
+                <p class="aboutme__p">Fast-forward to today, and I’ve had the privilege of working at <span>an advertising agency, a start-up, a huge corporation</span>, and <span>a student-led design studio</span>. My main focus these days is building accessible, inclusive products and digital experiences at <span>Upstatement </span>for a variety of clients. </p>
+                <p class="aboutme__p">I also recently <span>launched a course</span> that covers everything you need to build a web app with the Spotify API using Node & React. </p>
             </div>
 
-            <p class="aboutme__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ab odio ut amet
-                suscipit doloremque exercitationem adipisci aliquid quae quis </p>
-
-            <h3 class="aboutme__h3">Algunas de las tecnologias con las que estuve trabajando recientemente:</h3>
-
-
-
-            <div class="aboutme__skills skills">
-
-                <i class="fa-brands fa-js skills__icon"></i>
-                <i class="fa-brands fa-react skills__icon"></i>
-                <i class="fa-brands fa-node-js skills__icon"></i>
-                <i class="fa-brands fa-java skills__icon"></i>
-                <i class="fa-brands fa-wordpress skills__icon"></i>
-                <i class="fa-brands fa-css3-alt skills__icon"></i>
+            <div class="aboutme__img">
+                <img src="https://i.pinimg.com/originals/f6/02/40/f60240e356314702521e1ff190cc8729.jpg" alt="foto">
             </div>
+
+            <div class="aboutme__experience experience">
+                <div class="experience__tittles">
+                    <h3 class="experience__btn-skills btn-exp-active" tabindex="0">Skills</h3>
+                    <h3 class="experience__btn-estudios" tabindex="0">Estudios</h3>
+                    <h3 class="experience__btn-jobs" tabindex="0">Jobs</h3>
+                </div>
+
+                <div class="experience__div skills">
+                    <div class="skills__tittles">
+                        <h3 tabindex="0" class="skills__h3 skills-frontend skillsactivado">FrontEnd</h3>
+                        <h3 tabindex="0" class="skills__h3 skills-backend">BackEnd</h3>
+                        <h3 tabindex="0" class="skills__h3 skills-tools">Tools</h3>
+                    </div>
+                    <div class="skills__div">
+                        <ul class="skills__ul">
+                            <li><i class="fa-brands fa-html5 skills__icon"></i><p class="skills__p">HTML</p></li>
+                            <li><i class="fa-brands fa-css3-alt skills__icon"></i><p class="skills__p">CSS</p></li>
+                            <li><i class="fa-brands fa-sass skills__icon"></i><p class="skills__p">Sass</p></li>
+                            <li><i class="fa-brands fa-bootstrap skills__icon"></i><p class="skills__p">BootStrap</p></li>
+                            <li><i class="fa-brands fa-js skills__icon"></i>
+                                <p class="skills__p">Javascript</p>
+                            </li>
+                            <li><i class="fa-brands fa-react skills__icon">
+
+                                </i>
+                                <p class="skills__p">ReactJs</p>
+                            </li>
+                            <li><i class="fa-brands fa-node-js skills__icon">
+
+                                </i>
+                                <p class="skills__p">TypeScript</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
         </section>
 
-        <section class="projects">
-            <h2 class="projects__h2">My projects</h2>
-            <div class="card">
-                <figure class="card__figure">
-                    <img src="	https://mmedinasv05.github.io/Portafolio/static/media/1-min.6b9d16e0.png" alt="img"
+        <section id="projects" class="projects">
+
+            <h2 class="projects__h2">My Projects</h2>
+
+            <div class="projects__card">
+
+
+                <figure class="card">
+
+                    <img src="https://mmedinasv05.github.io/Portafolio/static/media/5-min.2607275b.webp" alt="img"
                         class="card__img">
-                    <figcaption class="card__figcaption">
-                        <section class="card__introduce">
-                            <h3>Page Web</h3>
-                            <p>HTML - CSS - JavaScript</p>
-                        </section>
-                        <nav class="card__nav">
-                            <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                    class="fa-brands fa-github card__icons"></i></a>
-                            <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                    class="fa-solid fa-globe card__icons"></i></a>
-                        </nav>
+
+                    <figcaption class="card-figcaption">
+
+                        <div class="card-figcaption__introduce">
+                            <div>
+                                <p class="card-figcaption__status">En proceso</p>
+                                <h3 class="card-figcaption__tittle">Page Web</h3>
+                            </div>
+
+                            <p class="card-figcaption__desc">Having struggled with understanding how the Spotify. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur aperiam nobis
+                                laudantium fugit</p>
+
+                            <p class="card-figcaption__tec">HTML - CSS - JavaScript</p>
+                            <nav class="card-figcaption-nav">
+                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                        class="fa-brands fa-github card-figcaption-nav__a"></i></a>
+                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                        class="fa-solid fa-globe card-figcaption-nav__a"></i></a>
+                            </nav>
+                        </div>
                     </figcaption>
+
                 </figure>
+
+                <figure class="card">
+
+                    <img src="https://mmedinasv05.github.io/Portafolio/static/media/5-min.2607275b.webp" alt="img"
+                        class="card__img">
+
+                    <figcaption class="card-figcaption">
+
+                        <div class="card-figcaption__introduce">
+                            <div>
+                                <p class="card-figcaption__status">En proceso</p>
+                                <h3 class="card-figcaption__tittle">Page Web</h3>
+                            </div>
+
+                            <p class="card-figcaption__desc">Having struggled with understanding how the Spotify. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur aperiam nobis
+                                laudantium fugit</p>
+
+                            <p class="card-figcaption__tec">HTML - CSS - JavaScript</p>
+                            <nav class="card-figcaption-nav">
+                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                        class="fa-brands fa-github card-figcaption-nav__a"></i></a>
+                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                        class="fa-solid fa-globe card-figcaption-nav__a"></i></a>
+                            </nav>
+                        </div>
+                    </figcaption>
+
+                </figure>
+
+                <figure class="card">
+
+                    <img src="https://mmedinasv05.github.io/Portafolio/static/media/5-min.2607275b.webp" alt="img"
+                        class="card__img">
+
+                    <figcaption class="card-figcaption">
+
+                        <div class="card-figcaption__introduce">
+                            <div>
+                                <p class="card-figcaption__status">En proceso</p>
+                                <h3 class="card-figcaption__tittle">Page Web</h3>
+                            </div>
+
+                            <p class="card-figcaption__desc">Having struggled with understanding how the Spotify. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur aperiam nobis
+                                laudantium fugit</p>
+
+                            <p class="card-figcaption__tec">HTML - CSS - JavaScript</p>
+                            <nav class="card-figcaption-nav">
+                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                        class="fa-brands fa-github card-figcaption-nav__a"></i></a>
+                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                        class="fa-solid fa-globe card-figcaption-nav__a"></i></a>
+                            </nav>
+                        </div>
+                    </figcaption>
+
+                </figure>
+
+                <figure class="card">
+
+                    <img src="https://mmedinasv05.github.io/Portafolio/static/media/5-min.2607275b.webp" alt="img"
+                        class="card__img">
+
+                    <figcaption class="card-figcaption">
+
+                        <div class="card-figcaption__introduce">
+                            <div>
+                                <p class="card-figcaption__status">En proceso</p>
+                                <h3 class="card-figcaption__tittle">Page Web</h3>
+                            </div>
+
+                            <p class="card-figcaption__desc">Having struggled with understanding how the Spotify. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur aperiam nobis
+                                laudantium fugit</p>
+
+                            <p class="card-figcaption__tec">HTML - CSS - JavaScript</p>
+                            <nav class="card-figcaption-nav">
+                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                        class="fa-brands fa-github card-figcaption-nav__a"></i></a>
+                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                        class="fa-solid fa-globe card-figcaption-nav__a"></i></a>
+                            </nav>
+                        </div>
+                    </figcaption>
+
+                </figure>
+
+
             </div>
 
-            <div class="card">
-                <figure class="card__figure">
-                    <img src="	https://mmedinasv05.github.io/Portafolio/static/media/1-min.6b9d16e0.png" alt="img"
-                        class="card__img">
-                    <figcaption class="card__figcaption">
-                        <section class="card__introduce">
-                            <h3>Page Web</h3>
-                            <p>HTML - CSS - JavaScript</p>
-                        </section>
-                        <nav class="card__nav">
-                            <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                    class="fa-brands fa-github card__icons"></i></a>
-                            <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                    class="fa-solid fa-globe card__icons"></i></a>
+            <div class="projects__articles">
+                <h3>Other Noteworthy Projects</h3>
+                <a href="#">See more Projects</a>
+                <div class="articles">
+                    <div class="article">
+                        <nav class="article__nav">
+                            <i
+                                class="fa-solid fa-folder article__icon article__icon--folder card-figcaption-nav__a"></i>
+                            <div>
+                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                        class="fa-brands fa-github  article__icon card-figcaption-nav__a "></i></a>
+                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                        class="fa-solid fa-globe article__icon card-figcaption-nav__a "></i></a>
+                            </div>
                         </nav>
-                    </figcaption>
-                </figure>
-            </div>
+                        <h4>OctoProfile</h4>
+                        <p>A nicer look at your github profile and repo stats. Includes data visualizations of your top
+                            languages, starred repositories, and sort through your top repos by number of stars, fork,
+                            and size</p>
+                        <p class="article__tec">HTML - Javascript - CSS</p>
 
-            <div class="card">
-                <figure class="card__figure">
-                    <img src="	https://mmedinasv05.github.io/Portafolio/static/media/1-min.6b9d16e0.png" alt="img"
-                        class="card__img">
-                    <figcaption class="card__figcaption ">
-                        <section class="card__introduce">
-                            <h3>Page Web</h3>
-                            <p>HTML - CSS - JavaScript</p>
-                        </section>
-                        <nav class="card__nav">
-                            <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                    class="fa-brands fa-github card__icons"></i></a>
-                            <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                    class="fa-solid fa-globe card__icons"></i></a>
-                        </nav>
-                    </figcaption>
-                </figure>
-            </div>
+                    </div>
 
-            <div class="card ">
-                <figure class="card__figure">
-                    <img src="	https://mmedinasv05.github.io/Portafolio/static/media/1-min.6b9d16e0.png" alt="img"
-                        class="card__img">
-                    <figcaption class="card__figcaption ">
-                        <section class="card__introduce">
-                            <h3>Page Web</h3>
-                            <p>HTML - CSS - JavaScript</p>
-                        </section>
-                        <nav class="card__nav">
-                            <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                    class="fa-brands fa-github card__icons"></i></a>
-                            <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                    class="fa-solid fa-globe card__icons"></i></a>
+                    <div class="article">
+                        <nav class="article__nav">
+                            <i class="fa-solid fa-folder article__icon article__icon--folder card-figcaption-nav__a"></i>
+                            <div>
+                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                        class="fa-brands fa-github  article__icon card-figcaption-nav__a "></i></a>
+                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                        class="fa-solid fa-globe article__icon card-figcaption-nav__a "></i></a>
+                            </div>
                         </nav>
-                    </figcaption>
-                </figure>
+                        <h4>OctoProfile</h4>
+                        <p>A nicer look at your github profile and repo stats. Includes data visualizations of your top
+                            languages, starred repositories, and sort through your top repos by number of stars, fork,
+                            and size</p>
+                        <p class="article__tec">HTML - Javascript - CSS</p>
+
+                    </div>
+
+                    <div class="article">
+                        <nav class="article__nav">
+                            <i
+                                class="fa-solid fa-folder article__icon article__icon--folder card-figcaption-nav__a"></i>
+                            <div>
+                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                        class="fa-brands fa-github  article__icon card-figcaption-nav__a "></i></a>
+                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                        class="fa-solid fa-globe article__icon card-figcaption-nav__a "></i></a>
+                            </div>
+                        </nav>
+                        <h4>OctoProfile</h4>
+                        <p>A nicer look at your github profile and repo stats. Includes data visualizations of your top
+                            languages, starred repositories, and sort through your top repos by number of stars, fork,
+                            and size</p>
+                        <p class="article__tec">HTML - Javascript - CSS</p>
+
+                    </div>
+
+                    <div class="article">
+                        <nav class="article__nav">
+                            <i
+                                class="fa-solid fa-folder article__icon article__icon--folder card-figcaption-nav__a"></i>
+                            <div>
+                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                        class="fa-brands fa-github  article__icon card-figcaption-nav__a "></i></a>
+                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                        class="fa-solid fa-globe article__icon card-figcaption-nav__a "></i></a>
+                            </div>
+                        </nav>
+                        <h4>OctoProfile</h4>
+                        <p>A nicer look at your github profile and repo stats. Includes data visualizations of your top
+                            languages, starred repositories, and sort through your top repos by number of stars, fork,
+                            and size</p>
+                        <p class="article__tec">HTML - Javascript - CSS</p>
+
+                    </div>
+                </div>
             </div>
+            <button  class="projects__btn less">Ver mas</button>
         </section>
 
-        <section class="experience">
-            <h2 class="experience__h2">My experience</h2>
+        <section class="more">
+            <h2 class="more__h2">What’s Next?</h2>
+            <h3 class="more__h3">Get In Touch</h3>
+            <p class="more__p">Although I’m not currently looking for any new opportunities, my inbox is always open.
+                Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+            <a href="contact.html" class="more__btn">Say Hello</a>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer__social">
+    <div class="social">
+        <aside class="social__network">
+            <i class="fa-brands fa-linkedin social__icon"></i>
+            <i class="fa-brands fa-square-twitter social__icon "></i>
+            <i class="fa-brands fa-github social__icon "></i>
+            <i class="fa-brands fa-codepen social__icon"></i>
+        </aside>
 
+        <aside class="social__contact">
+            <p>bobrukfs@gmail.com.ar</p>
+        </aside>
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer__contact">
+            <p>bobrukfs@gmail.com.ar</p>
+        </div>
+
+        <div class="footer__social">
             <i class="fa-brands fa-linkedin footer__icon"></i>
             <i class="fa-brands fa-square-instagram footer__icon"></i>
             <i class="fa-brands fa-square-twitter footer__icon "></i>
             <i class="fa-brands fa-github footer__icon "></i>
-
         </div>
 
         <p>Desarrollado por Exequiel Bobruk</p>
+
+        <div class="footer__code">
+            <i class="fa-solid fa-code-branch footer__codeicon"></i>
+            <i class="fa-solid fa-heart footer__codeicon"></i>
+        </div>
+
     </footer>
 
     <script src="script.js"></script>
