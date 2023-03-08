@@ -1,5 +1,4 @@
 `use strict`
-
 //Header
 let header = document.getElementsByClassName("header");
 let prevScrollPos = window.pageYOffset;
@@ -77,6 +76,8 @@ for (let i = 0; i < button.length; i++) {
         if (button[i].classList[0] === "experience__btn-skills") {
             expbtnactive[0].classList.remove("btn-exp-active");
             button[i].classList.add("btn-exp-active");
+            expdiv[0].classList.replace("study","skills" )
+            expdiv[0].classList.replace("jobs","skills" )
             expdiv[0].innerHTML = `
             <div class="skills__tittles">
             <h3 tabindex="0" class="skills__h3 skills-frontend skillsactivado">FrontEnd</h3>

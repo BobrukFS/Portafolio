@@ -1,6 +1,6 @@
 @media (min-width: 425px) {
     main {
-        margin: 0rem 5rem;
+        margin: 0rem 4rem;
     }
 
     h2 {
@@ -10,6 +10,16 @@
     p {
         font-size: 1.7rem;
     }
+    /* Menu */
+    .menu__enlaces {
+       
+        font-size: 1.9rem;
+        
+    }
+
+    .menu__p {
+        font-size: 1.5rem;
+    }
 
     /*Introduce */
 
@@ -18,54 +28,170 @@
     }
 
     .introduce__h2 {
-        font-size: 4.2rem;
-    }
-
-    .introduce__h3 {
         font-size: 4rem;
     }
 
-
-    .desc__p {
-        font-size: 1.7rem;
+    .introduce__h3 {
+        font-size: 3.6rem;
     }
 
     .introduce__btn {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
-    .aboutme__h3 {
-        font-size: 1.7rem;
+    /*Aboutme */
+
+    .aboutme__experience {
+        max-width: 51rem;
+        margin: auto auto;
     }
 
+    .aboutme__img {
+        width: 25rem;
+        height: 25rem;
+   
+    }
+
+
+.experience__tittles>h3 {
+    font-size: 1.7rem;
+}
+
+.skills__h3 {
+    font-size: 1.5rem;
+
+}
+
+.skills__p {
+    font-size: 1.3rem;
+
+}
+
+.skills__icon {
+    font-size: 3rem;
+}
+
+.study__h3 {
+    font-size: 1.5rem;
+ 
+}
+
+.study__items p {
+    font-size: 1.3rem;
+}
+
+.jobs__p {
+ 
+    font-size: 1.5rem;
+}
+
+.jobs__btn {
+   
+    font-size: 1.9rem;
+ 
+}
     /*Projects*/
 
     .card {
-    
-        height: auto;
+       
+        max-width: 50rem;
     }
-    .card__img {
-        width: 100%;
-        height: auto;
+   
+
+    .card-figcaption__status {
+    
+        font-size: 1.3rem;
+       
+    }
+    
+    .card-figcaption__tittle {
+        font-size: 1.7rem;
+
+    }
+    
+    .card-figcaption__desc {
+        font-size: 1.5rem;
+    }
+    
+    .card-figcaption__tec {
+        font-size: 1.3rem;
+     
+    }
+
+    .card-figcaption-nav__a {
+        color: var(--white);
+        font-size: 2.8rem;
+        max-width: 3.5rem;
     }
 
     .projects__btn {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
+    /* Article projects */
+    .projects__articles>a {
+   
+        font-size: 1.9rem;
+      
+    }
+  
+    .article h4 {
+        font-size: 1.7rem;
+
+    }
+    
+    .article p {
+        font-size: 1.5rem;
+        
+    
+    }
+    
+    .article p:nth-child(4) {
+        font-size: 1.3rem;
+     
+    }
+
+    .article__icon--folder {
+        color: var(--secondary);
+        margin: 0rem;
+    }
+    
     /* Contact more */
+    .more__h3 {
+        font-size: 1.9rem;
+        color: var(--secondary);
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .more__p {
+        font-size: 1.7rem;
+    }
 
     .more__btn {
-        font-size: 2rem;
+        font-size: 1.9rem;
+    }
+
+    /*footer */
+
+    .footer>p {
+ 
+     font-size: 1.5rem;
+
     }
 }
 
-
+@media (min-width: 500px) { 
+    .skills__ul {
+        column-count: 3;
+    }
+    
+}
 
 @media (min-width: 768px) {
 
     main {
-        margin: auto 10rem;
+        margin: auto 15rem;
     }
 
     /*Header*/
@@ -89,7 +215,7 @@
         visibility: visible;
         height: auto;
         width: auto;
-        background-color: var(--white);
+        background-color: transparent;
         transform: translateX(0);
     }
 
@@ -97,7 +223,7 @@
         display: inline-block;
         margin: auto 1.5rem;
         color: var(--primary);
-        font-size: 1.8rem;
+        font-size: 1.9rem;
         font-weight: 400;
     }
 
@@ -160,167 +286,72 @@
         display: block;
         position: fixed;
         left: 35px;
-        bottom: 110px;
-        margin-top: 3.5rem;
-        margin-left: 0;
+        bottom: 0px;
+    
+    
     }
 
     .social__icon {
-        padding: .5rem;
+       
         font-size: 3.5rem;
+        margin-bottom: 1rem;
         display: block;
         color: var(--secondary);
 
     }
 
     .social::after {
-        position: fixed;
+        display: block;
+        position: relative;
         content: " ";
         width: 2px;
-        height: 15rem;
-        margin: 0 2.7rem;
+        min-height: 15rem;
         background-color: var(--primary);
-        z-index: -1;
+        margin: 2rem auto 0rem;
     }
 
     .social__contact {
         display: block;
         position: fixed;
-        right: 35px;
-        bottom: 110px;
+        right:  50px;
+        bottom: 0px;
     }
 
     .social__contact p {
         display: block;
         writing-mode: vertical-rl;
         font-style: normal;
-        margin: .5rem;
+        margin-bottom: 2rem;
         font-size: 1.4rem;
+        line-height: 0rem;
     }
 
     .social__contact::after {
-        position: absolute;
+        display: block;
+        position: relative;
         content: "";
         background-color: var(--primary);
         width: 2px;
-        min-height: 100vw;
-        margin: 0 1.1rem;
-
+        min-height: 15rem;
+        margin-top: 2rem;
+        margin: auto auto;
+        
     }
 
-    /*about me */
+    /*Introduce */
 
-    .aboutme {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-    }
+    
 
-    .aboutme__h2 {
-        font-size: 3.6rem;
-        grid-column: 1/3;
-    }
-
-    .aboutme__h3 {
-        font-size: 1.7;
-    }
-
-    .aboutme__p {
-        font-size: 1.7rem;
-    }
-
-    .aboutme__desc {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
+    /*Aboutme */
 
     .aboutme__img {
-        margin: 2rem 0rem auto auto;
-        width: 10%;
-        height: fit-content;
-        max-width: 30rem;
-        grid-column: 1/3;
-        grid-row: 2/3;
-    }
-
-    .aboutme__img img{
-        width: 100%;
-    }
-
-    .skills {
-        gap: 1rem;
-    }
-
-    .skills__icon {
-        font-size: 3.5rem;
-    }
-
-    /* Cards Project */
-    .projects {
-        margin-top: 15rem;
-    }
-
-    .projects__card {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0rem 5rem;
-    }
-
-    .projects__h2 {
-        font-size: 3.6rem;
-    }
-
-
-    .card {
-        flex: 0 0 calc(80%);
-        max-width: 60vw;
-        margin: 2rem 0rem;
-    }
-
-    .card-figcaption__tittle {
-        font-size: clamp(4rem, 5vw, 4.5rem);
-    }
-
-    .card-figcaption__status {
-        font-size: clamp(2rem, 2.9vw, 3rem);
-    }
-
-    .card-figcaption-nav__a {
-        font-size: clamp(3rem, 4vw, 4rem);
-    }
-
-    /* Projects Article */
-
-    .projects__articles h3 {
-        font-size: 2.2rem;
-    }
-
-    .projects__articles>a {
-        font-size: 1.8rem;
-    }
-
-    .articles {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .article {
-        max-width: 49%;
-        margin: 1rem auto;
+        width: 30rem;
+        height: 30rem;
+   
     }
 
     /*Footer */
 
-    .footer {
-        background-color: var(--white);
-        padding-top: 10rem;
-    }
-
-    .footer p {
-        color: var(--primary);
-        font-size: 2rem;
-    }
 
     .footer__social {
         display: none;
@@ -330,19 +361,9 @@
     .footer__contact {
         display: none;
     }
-
-    .footer>p {
-
-        font-size: 1.6rem;
-
-    }
-
-    .footer__codeicon {
-        color: var(--primary);
-        font-size: 2rem;
-        margin-left: 1rem;
-    }
 }
+
+
 
 
 @media (min-width: 1024px) {
@@ -356,7 +377,7 @@
     }
 
     .introduce {
-        margin: 0px auto;
+        margin: 0px auto 0px 0px;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
@@ -373,7 +394,7 @@
     }
     
     .introduce__h3 {
-        font-size: 7rem;
+        font-size: 6rem;
     }
     
     .desc {
@@ -392,44 +413,70 @@
     /*About me */
 
     .aboutme {
-        margin: 0rem auto;
-        max-width: 80rem;
+        margin: 0rem 5rem;
+        max-width: 1200rem;
+    }
+    .aboutme > div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
-    .aboutme-img {
-        margin: 4rem 0rem auto auto;
-        width: 75%;
-        max-width: 28rem;
-        height: fit-content;
+
+    .aboutme__desc {
+        grid-column: 1/2;
+        grid-row: 1/2;
+      
+    }
+
+    .aboutme__img {
+        margin: 2rem auto auto auto;
+        width: clamp(20rem,20vw ,27rem);
+        height: clamp(20rem,20vw ,27rem);;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .aboutme__img > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .aboutme__experience {
+        grid-column: 1/3;
+        grid-row: 2/4;
+        width: 51rem;
+        margin: 4rem auto auto 0rem;
     }
 
     /*Projects*/
 
     .projects {
-        margin: 25rem auto;
-        max-width: 92rem;
+        margin: 10rem 0rem;
     }
-
+    
     .card {   
-     margin: auto auto auto 0;
+        margin: 10rem 0rem 10rem auto;
+        max-width: none;
        width: 100%;
+       height: 100%;
         border: none;
         box-shadow: none;
-        margin-bottom: 10rem;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(3, 1fr);
         justify-content: start;
-        flex: none;
+      
     }
 
 
     .card__img {
         width: 100%;
+        height: 100%;
         border-radius: .5rem;
         grid-column: 1/4;
         grid-row: 1/4;
-        max-width: 55rem;
+        max-width: none;
         pointer-events:none;
     }
 
@@ -439,6 +486,7 @@
      
         visibility: visible;
         width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -523,8 +571,8 @@
     }
 
     .card:nth-child(2n) .card-figcaption__desc {
-        align-self: start;
-        left: 0%;
+        align-self: flex-end;
+        left: -20%;
     }
 
     .card:nth-child(2n) .card-figcaption__tec {
@@ -543,15 +591,25 @@
 
     /*Projects article*/
 
+ 
     .articles {
+        display: flex;
         gap: 2rem 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .article {
+       
+        flex-basis: calc(100% - 65%);
+        max-width: 30rem;
         margin: 0rem;
-        flex: 0 0 calc(49%);
-        max-width: 40rem;
+        
 
+    }
+
+    .projects__btn {
+        margin: 4rem auto;
     }
 }
 
