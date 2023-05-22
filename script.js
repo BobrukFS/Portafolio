@@ -1,7 +1,52 @@
 `use strict`
-//Header
 let header = document.getElementsByClassName("header");
+let introduce = document.getElementsByClassName("introduce");
+let social = document.getElementsByClassName("social");
 let prevScrollPos = window.pageYOffset;
+let enlaces = document.getElementsByClassName("menu__enlaces");
+let menuButton = document.getElementsByClassName("button");
+let headerImg = document.getElementsByClassName("header__img");
+// Preloader
+
+let preloader = document.getElementsByClassName("preloader");
+
+let preloader1 = document.getElementsByClassName("preloader__li");
+window.addEventListener("load", function () {
+
+        for(let i = 0; i < preloader1.length; i++){
+            preloader1[i].style.animationIterationCount = "1";
+            
+        }
+      
+
+        setTimeout(() => {
+            preloader[0].style.display = "none";
+            introduce[0].classList.add("salto");   
+            document.documentElement.style.overflowY = "auto";
+            header[0].style.animation = "transp 1s linear";
+            headerImg[0].style.animation = "transp 1s forwards";
+            menuButton[0].style.animation = "transp 1s forwards";
+            let total = 0;
+            for(let i = 0; i < enlaces.length; i++){
+                enlaces[i].style.animation = "transp 1s forwards"; 
+                enlaces[i].style.animationDelay = `${total}s`;
+                total += 0.1;
+            }
+
+
+    
+        
+        }, 3250)
+  
+});
+
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+  
+
+//Header
 
 
 function scrolls() {
@@ -12,10 +57,10 @@ function scrolls() {
 
         header[0].classList.replace("scrollbottom", "scrolltop");
 
-    } else if(prevScrollPos > currentScrollPos && window.pageYOffset === 0){
+    } else if (prevScrollPos > currentScrollPos && window.pageYOffset === 0) {
         header[0].classList.remove("scrolltop");
 
-    }else if (prevScrollPos < currentScrollPos) {
+    } else if (prevScrollPos < currentScrollPos) {
         header[0].classList.add("scrollbottom");
     }
     prevScrollPos = currentScrollPos;
@@ -25,13 +70,22 @@ function scrolls() {
 window.addEventListener("scroll", scrolls);
 
 
+for(let j = 0; j < enlaces.length; j++){
+    enlaces[j].addEventListener("click", (e) => {
+        e.preventDefault();
+        const seccion = document.querySelector(enlaces[j].getAttribute("href"));
+        seccion.scrollIntoView({behavior: "smooth"});
+    });
+}
+
+
 //Menu
-let menuButton = document.getElementsByClassName("button");
+
 let menuButtonCondition = false;
 let menuNav = document.getElementsByClassName("menu");
 let barraMiddle = document.getElementsByClassName("button__icon");
 let main = document.querySelector("main");
-let enlaces = document.getElementsByClassName("menu__enlaces");
+
 
 menuButton[0].addEventListener("click", (e) => {
     if (menuButtonCondition === false) {
@@ -53,7 +107,7 @@ menuButton[0].addEventListener("click", (e) => {
 });
 
 for (let i = 0; i < enlaces; i++) {
-    enlaces[i].addEventListener("click", ()=>{
+    enlaces[i].addEventListener("click", () => {
         document.documentElement.style.overflow = "auto";
     })
 }
@@ -76,8 +130,8 @@ for (let i = 0; i < button.length; i++) {
         if (button[i].classList[0] === "experience__btn-skills") {
             expbtnactive[0].classList.remove("btn-exp-active");
             button[i].classList.add("btn-exp-active");
-            expdiv[0].classList.replace("study","skills" )
-            expdiv[0].classList.replace("jobs","skills" )
+            expdiv[0].classList.replace("study", "skills")
+            expdiv[0].classList.replace("jobs", "skills")
             expdiv[0].innerHTML = `
             <div class="skills__tittles">
             <h3 tabindex="0" class="skills__h3 skills-frontend skillsactivado">FrontEnd</h3>
@@ -343,12 +397,12 @@ window.addEventListener("click", function () {
 //Article
 
 let btnprojects = document.getElementsByClassName("projects__btn");
-let projectArticles = document.getElementsByClassName("projects__articles");
+let projectArticles = document.getElementsByClassName("articles");
 btnprojects[0].addEventListener("click", (e) => {
     if (btnprojects[0].classList[1] === "less") {
         projectArticles[0].insertAdjacentHTML("beforeend", `
         
-        <div class="articles">
+   
                     <div class="article">
                         <nav class="article__nav">
                             <i
@@ -432,8 +486,7 @@ btnprojects[0].addEventListener("click", (e) => {
         btnprojects[0].classList.replace("less", "more");
     } else if (btnprojects[0].classList[1] === "more") {
         projectArticles[0].innerHTML = `
-        <h3>Other Noteworthy Projects</h3>
-        <a href="#">See more Projects</a>
+     
         <div class="articles">
             <div class="article">
                 <nav class="article__nav">
@@ -510,6 +563,8 @@ btnprojects[0].addEventListener("click", (e) => {
 
             </div>
         `;
+        btnprojects[0].textContent = "Ver mas";
         btnprojects[0].classList.replace("more", "less");
     }
 })
+
