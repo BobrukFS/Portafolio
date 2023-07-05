@@ -809,6 +809,10 @@ h2 {
     margin-bottom: 4rem;
 }
 
+.projects__articles > a:hover{
+    border-bottom: 1px solid var(--secondary);
+}
+
 .article {
     background-color: var(--primary);
     width: 100%;

@@ -265,7 +265,7 @@ for (let i = 0; i < button.length; i++) {
             expdiv[0].innerHTML = `<div class="jobs__div">
             <div class="categoria__lane"><p class="jobs__p">En busca de mi primer experiencia</p>
                 <img src="Img/4401280.jpg" class="jobs__img">
-                <a href="contact.html" class="jobs__btn">Say Hello</a>
+                <a href="contact.html" class="jobs__btn">Contactame</a>
             </div>
         </div>`;
         }
