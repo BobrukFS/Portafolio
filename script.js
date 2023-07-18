@@ -152,11 +152,7 @@ for (let i = 0; i < button.length; i++) {
             </i>
             <p class="skills__p">ReactJs</p>
         </li>
-        <li><i class="fa-brands fa-node-js skills__icon">
-
-            </i>
-            <p class="skills__p">TypeScript</p>
-        </li>
+        
     </ul>
                     </div>`;
 
@@ -180,28 +176,18 @@ for (let i = 0; i < button.length; i++) {
                             </i>
                             <p class="skills__p">ReactJs</p>
                         </li>
-                        <li><i class="fa-brands fa-node-js skills__icon">
-                
-                            </i>
-                            <p class="skills__p">TypeScript</p>
-                        </li>
+    
                     </ul>
                         `;
                     } else if (h3Skills[j].classList[1] === "skills-backend") {
                         divSkills[0].innerHTML = `<ul class="skills__ul listbackend">
-                        <li><i class="fa-brands fa-node-js skills__icon"></i></i>
-                            <p class="skills__p">Node Js</p>
-                        </li>
+                    
                         <li><i class="fa-brands fa-react skills__icon">
             
                             </i>
-                            <p class="skills__p">MySql</p>
+                            <p class="skills__p">SQL</p>
                         </li>
-                        <li><i class="fa-brands fa-node-js skills__icon">
-            
-                            </i>
-                            <p class="skills__p">Phyton</p>
-                        </li>
+                     
                     </ul>
                 `;
                         skiActive[0].classList.remove("skillsactivado");
@@ -212,7 +198,7 @@ for (let i = 0; i < button.length; i++) {
                    
                      <ul class="skills__ul listbackend">
                         <li><i class="fa-brands fa-github skills__icon"></i>
-                            <p class="skills__p">Github</p>
+                            <p class="skills__p">Git</p>
                         </li>
                        
                     </ul>
@@ -234,7 +220,9 @@ for (let i = 0; i < button.length; i++) {
 
         <div class="study__items">
             <ul>
-                <li><p>Estudiante de la universidad de Quilmes</p></li>
+            <li><p>Estudiante de Informatica en universidad de Quilmes</p></li>
+            <li><p>Desarrollador Front-end Digitalers</p></li>
+            <li><p>Desarrollador Full-Stack Fundacion Pescar</p></li>
             </ul>
         </div>`;
             h3Study[0].classList.add("skillsactivado");
@@ -245,7 +233,9 @@ for (let i = 0; i < button.length; i++) {
                         h3Study[j].classList.add("skillsactivado");
                         divStudy[0].innerHTML = `
                     <ul>
-                    <li><p>Estudiante de la universidad de Quilmes</p></li>
+                    <li><p>Estudiante de Informatica en universidad de Quilmes</p></li>
+                    <li><p>Desarrollador Front-end Digitalers</p></li>
+                    <li><p>Desarrollador Full-Stack Fundacion Pescar</p></li>
                 </ul>
                     `
                     } else if (h3Study[j].classList[1] === "study-completos") {
@@ -294,11 +284,7 @@ for (let j = 0; j < h3Skills.length; j++) {
                 </i>
                 <p class="skills__p">ReactJs</p>
             </li>
-            <li><i class="fa-brands fa-node-js skills__icon">
-
-                </i>
-                <p class="skills__p">TypeScript</p>
-            </li>
+           
         </ul>
             `
         } else if (h3Skills[j].classList[1] === "skills-backend") {
@@ -306,26 +292,20 @@ for (let j = 0; j < h3Skills.length; j++) {
             skiActive[0].classList.remove("skillsactivado");
             h3Skills[j].classList.add("skillsactivado");
             divSkills[0].innerHTML = ` <ul class="skills__ul listbackend">
-            <li><i class="fa-brands fa-node-js skills__icon"></i></i>
-                <p class="skills__p">Node Js</p>
-            </li>
+           
             <li><i class="fa-brands fa-react skills__icon">
 
                 </i>
-                <p class="skills__p">MySql</p>
+                <p class="skills__p">SQL</p>
             </li>
-            <li><i class="fa-brands fa-node-js skills__icon">
-
-                </i>
-                <p class="skills__p">Phyton</p>
-            </li>
+          
         </ul>`
         } else if (h3Skills[j].classList[1] === "skills-tools") {
             skiActive[0].classList.remove("skillsactivado");
             h3Skills[j].classList.add("skillsactivado");
             divSkills[0].innerHTML = `  <ul class="skills__ul listbackend">
             <li><i class="fa-brands fa-github skills__icon"></i>
-                <p class="skills__p">Github</p>
+                <p class="skills__p">Git</p>
             </li>
            
         </ul>`
@@ -408,17 +388,17 @@ btnprojects[0].addEventListener("click", (e) => {
                             <i
                                 class="fa-solid fa-folder article__icon article__icon--folder card-figcaption-nav__a"></i>
                             <div>
-                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                <a href="https://github.com/BobrukFS/Fundacion-Pescar-y-Digitalers/tree/main/Modulo-1.2" target="_blank"><i
                                         class="fa-brands fa-github  article__icon card-figcaption-nav__a "></i></a>
-                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                <a href="https://bobrukfs.github.io/Fundacion-Pescar-y-Digitalers/Modulo-1.2/src" target="_blank"><i
                                         class="fa-solid fa-globe article__icon card-figcaption-nav__a "></i></a>
                             </div>
                         </nav>
-                        <h4>OctoProfile</h4>
-                        <p>A nicer look at your github profile and repo stats. Includes data visualizations of your top
-                            languages, starred repositories, and sort through your top repos by number of stars, fork,
-                            and size</p>
-                        <p class="article__tec">HTML - Javascript - CSS</p>
+                        <p>Terminado</p>
+                        <h4>Pagina tributo</h4>
+                      
+                        <p>Pagina tributo de un videojuego llamado "A plague tale"</p>
+                        <p class="article__tec">HTML - CSS</p>
 
                     </div>
 
@@ -428,140 +408,103 @@ btnprojects[0].addEventListener("click", (e) => {
                             <i
                                 class="fa-solid fa-folder article__icon article__icon--folder card-figcaption-nav__a"></i>
                             <div>
-                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                <a href="https://github.com/BobrukFS/Fundacion-Pescar-y-Digitalers/tree/main/Modulo-2.1" target="_blank"><i
                                         class="fa-brands fa-github  article__icon card-figcaption-nav__a "></i></a>
-                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
+                                <a href="https://bobrukfs.github.io/Fundacion-Pescar-y-Digitalers/Modulo-2.1/src" target="_blank"><i
                                         class="fa-solid fa-globe article__icon card-figcaption-nav__a "></i></a>
                             </div>
-                        </nav>
-                        <h4>OctoProfile</h4>
-                        <p>A nicer look at your github profile and repo stats. Includes data visualizations of your top
-                            languages, starred repositories, and sort through your top repos by number of stars, fork,
-                            and size</p>
-                        <p class="article__tec">HTML - Javascript - CSS</p>
-
+                        </nav>     
+                        <p>En proceso</p>
+                        <h4>Libreria</h4>
+                   
+                        <p>Pagina de un libreria, responsive web</p>
+                        <p class="article__tec">HTML - CSS - Bootstrap - Javascript</p>
                     </div>
 
-                    <div class="articles">
-                    <div class="article">
-                        <nav class="article__nav">
-                            <i
-                                class="fa-solid fa-folder article__icon article__icon--folder card-figcaption-nav__a"></i>
-                            <div>
-                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                        class="fa-brands fa-github  article__icon card-figcaption-nav__a "></i></a>
-                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                        class="fa-solid fa-globe article__icon card-figcaption-nav__a "></i></a>
-                            </div>
-                        </nav>
-                        <h4>OctoProfile</h4>
-                        <p>A nicer look at your github profile and repo stats. Includes data visualizations of your top
-                            languages, starred repositories, and sort through your top repos by number of stars, fork,
-                            and size</p>
-                        <p class="article__tec">HTML - Javascript - CSS</p>
-
-                    </div>
-
-                    <div class="articles">
-                    <div class="article">
-                        <nav class="article__nav">
-                            <i
-                                class="fa-solid fa-folder article__icon article__icon--folder card-figcaption-nav__a"></i>
-                            <div>
-                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                        class="fa-brands fa-github  article__icon card-figcaption-nav__a "></i></a>
-                                <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                        class="fa-solid fa-globe article__icon card-figcaption-nav__a "></i></a>
-                            </div>
-                        </nav>
-                        <h4>OctoProfile</h4>
-                        <p>A nicer look at your github profile and repo stats. Includes data visualizations of your top
-                            languages, starred repositories, and sort through your top repos by number of stars, fork,
-                            and size</p>
-                        <p class="article__tec">HTML - Javascript - CSS</p>
-
-                    </div>
+                
         `);
         btnprojects[0].textContent = "Ver menos";
         btnprojects[0].classList.replace("less", "more");
     } else if (btnprojects[0].classList[1] === "more") {
         projectArticles[0].innerHTML = `
+
+        <div class="article">
+        <nav class="article__nav">
+            <i
+                class="fa-solid fa-folder article__icon article__icon--folder "></i>
+            <div>
+                <a href="https://github.com/BobrukFS/Proyectos-Frontend/tree/main/rating-component" target="_blank"><i
+                        class="fa-brands fa-github  article__icon  "></i></a>
+                <a href="https://bobrukfs.github.io/Proyectos-Frontend/rating-component/src/" target="_blank"><i
+                        class="fa-solid fa-globe article__icon  "></i></a>
+            </div>
+        </nav>
+        <p>Terminado</p>
+        <h4>Componente Rating</h4>
+        
+        <p>Es un componente para dar una valoracion de la aplicacion o pagina web</p>
+        <p class="article__tec">HTML - CSS - Javascript</p>
+
+    </div>
+
+    <div class="article">
+        <nav class="article__nav">
+            <i class="fa-solid fa-folder article__icon article__icon--folder "></i>
+            <div>
+                <a href="https://github.com/BobrukFS/Web-Clima" target="_blank"><i
+                        class="fa-brands fa-github  article__icon  "></i></a>
+                <a href="https://bobrukfs.github.io/Web-Clima/" target="_blank"><i
+                        class="fa-solid fa-globe article__icon  "></i></a>
+            </div>
+        </nav>
+        <p>En proceso</p>
+        <h4>Web clima</h4>
+        
+        <p>Pagina de clima que consume la API de openweathermap, es responsive web.</p>
+        <p class="article__tec">HTML - CSS - SASS - Javascript</p>
+
+    </div>
+
+    <div class="article">
+        <nav class="article__nav">
+            <i
+                class="fa-solid fa-folder article__icon article__icon--folder "></i>
+            <div>
+                <a href="https://github.com/BobrukFS/aquario" target="_blank"><i
+                        class="fa-brands fa-github  article__icon  "></i></a>
+                <a href="#" target="_blank"><i
+                        class="fa-solid fa-globe article__icon  "></i></a>
+            </div>
+        </nav>
+        <p>En proceso</p>
+        <h4>Aquario</h4>
+      
+        <p>Campus virtual para los estudiantes y egresados de Fundacion Pescar que contara con un entorno de comunicacion e intercambio de experiencias.</p>
+        <p class="article__tec">MERN</p>
+
+    </div>
+
+    <div class="article">
+        <nav class="article__nav">
+            <i
+                class="fa-solid fa-folder article__icon article__icon--folder "></i>
+            <div>
+                <a href="https://github.com/BobrukFS/Portafolio-2" target="_blank"><i
+                        class="fa-brands fa-github  article__icon  "></i></a>
+                <a href="https://bobrukfs.github.io/Portafolio-2/src/" target="_blank"><i
+                        class="fa-solid fa-globe article__icon  "></i></a>
+            </div>
+        </nav>
+        <p>En proceso</p>
+        <h4>Portafolio 2</h4>
+       
+        <p>Este es mi segundo portafolio</p>
+        <p class="article__tec">HTML - CSS - SASS - Javascript</p>
+
+    </div>
      
-        <div class="articles">
-            <div class="article">
-                <nav class="article__nav">
-                    <i
-                        class="fa-solid fa-folder article__icon article__icon--folder card-figcaption-nav__a"></i>
-                    <div>
-                        <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                class="fa-brands fa-github  article__icon card-figcaption-nav__a "></i></a>
-                        <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                class="fa-solid fa-globe article__icon card-figcaption-nav__a "></i></a>
-                    </div>
-                </nav>
-                <h4>OctoProfile</h4>
-                <p>A nicer look at your github profile and repo stats. Includes data visualizations of your top
-                    languages, starred repositories, and sort through your top repos by number of stars, fork,
-                    and size</p>
-                <p class="article__tec">HTML - Javascript - CSS</p>
+  
 
-            </div>
-
-            <div class="article">
-                <nav class="article__nav">
-                    <i class="fa-solid fa-folder article__icon article__icon--folder card-figcaption-nav__a"></i>
-                    <div>
-                        <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                class="fa-brands fa-github  article__icon card-figcaption-nav__a "></i></a>
-                        <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                class="fa-solid fa-globe article__icon card-figcaption-nav__a "></i></a>
-                    </div>
-                </nav>
-                <h4>OctoProfile</h4>
-                <p>A nicer look at your github profile and repo stats. Includes data visualizations of your top
-                    languages, starred repositories, and sort through your top repos by number of stars, fork,
-                    and size</p>
-                <p class="article__tec">HTML - Javascript - CSS</p>
-
-            </div>
-
-            <div class="article">
-                <nav class="article__nav">
-                    <i
-                        class="fa-solid fa-folder article__icon article__icon--folder card-figcaption-nav__a"></i>
-                    <div>
-                        <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                class="fa-brands fa-github  article__icon card-figcaption-nav__a "></i></a>
-                        <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                class="fa-solid fa-globe article__icon card-figcaption-nav__a "></i></a>
-                    </div>
-                </nav>
-                <h4>OctoProfile</h4>
-                <p>A nicer look at your github profile and repo stats. Includes data visualizations of your top
-                    languages, starred repositories, and sort through your top repos by number of stars, fork,
-                    and size</p>
-                <p class="article__tec">HTML - Javascript - CSS</p>
-
-            </div>
-
-            <div class="article">
-                <nav class="article__nav">
-                    <i
-                        class="fa-solid fa-folder article__icon article__icon--folder card-figcaption-nav__a"></i>
-                    <div>
-                        <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                class="fa-brands fa-github  article__icon card-figcaption-nav__a "></i></a>
-                        <a href="https://mmedinasv05.github.io/Portafolio/#/Projects" target="_blank"><i
-                                class="fa-solid fa-globe article__icon card-figcaption-nav__a "></i></a>
-                    </div>
-                </nav>
-                <h4>OctoProfile</h4>
-                <p>A nicer look at your github profile and repo stats. Includes data visualizations of your top
-                    languages, starred repositories, and sort through your top repos by number of stars, fork,
-                    and size</p>
-                <p class="article__tec">HTML - Javascript - CSS</p>
-
-            </div>
         `;
         btnprojects[0].textContent = "Ver mas";
         btnprojects[0].classList.replace("more", "less");
