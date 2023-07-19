@@ -213,6 +213,7 @@ for (let i = 0; i < button.length; i++) {
             expbtnactive[0].classList.remove("btn-exp-active");
             button[i].classList.add("btn-exp-active");
             expdiv[0].classList.replace("skills", "study")
+            expdiv[0].classList.replace("jobs", "study")
             expdiv[0].innerHTML = `<div class="study__tittles">
             <h3 tabindex="0" class="study__h3 study-progreso">En progreso</h3>
             <h3 tabindex="0" class="study__h3 study-completos">Completos</h3>
@@ -249,8 +250,10 @@ for (let i = 0; i < button.length; i++) {
             }
 
         } else if (button[i].classList[0] === "experience__btn-jobs") {
+        
             expbtnactive[0].classList.remove("btn-exp-active");
             button[i].classList.add("btn-exp-active");
+      
             expdiv[0].classList.replace("skills", "jobs")
             expdiv[0].innerHTML = `<div class="jobs__div">
             <div class="categoria__lane"><p class="jobs__p">En busca de mi primer experiencia</p>
@@ -384,41 +387,48 @@ btnprojects[0].addEventListener("click", (e) => {
         
    
                     <div class="article">
+                    <div>
                         <nav class="article__nav">
                             <i
-                                class="fa-solid fa-folder article__icon article__icon--folder card-figcaption-nav__a"></i>
+                                class="fa-solid fa-folder article__icon article__icon--folder"></i>
                             <div>
                                 <a href="https://github.com/BobrukFS/Fundacion-Pescar-y-Digitalers/tree/main/Modulo-1.2" target="_blank"><i
-                                        class="fa-brands fa-github  article__icon card-figcaption-nav__a "></i></a>
+                                        class="fa-brands fa-github  article__icon "></i></a>
                                 <a href="https://bobrukfs.github.io/Fundacion-Pescar-y-Digitalers/Modulo-1.2/src" target="_blank"><i
-                                        class="fa-solid fa-globe article__icon card-figcaption-nav__a "></i></a>
+                                        class="fa-solid fa-globe article__icon "></i></a>
                             </div>
                         </nav>
                         <p>Terminado</p>
                         <h4>Pagina tributo</h4>
                       
                         <p>Pagina tributo de un videojuego llamado "A plague tale"</p>
+                        </div>
+                        <div>
                         <p class="article__tec">HTML - CSS</p>
-
+</div>
                     </div>
 
                     <div class="articles">
                     <div class="article">
+                    <div>
                         <nav class="article__nav">
                             <i
-                                class="fa-solid fa-folder article__icon article__icon--folder card-figcaption-nav__a"></i>
+                                class="fa-solid fa-folder article__icon article__icon--folder"></i>
                             <div>
                                 <a href="https://github.com/BobrukFS/Fundacion-Pescar-y-Digitalers/tree/main/Modulo-2.1" target="_blank"><i
-                                        class="fa-brands fa-github  article__icon card-figcaption-nav__a "></i></a>
+                                        class="fa-brands fa-github  article__icon "></i></a>
                                 <a href="https://bobrukfs.github.io/Fundacion-Pescar-y-Digitalers/Modulo-2.1/src" target="_blank"><i
-                                        class="fa-solid fa-globe article__icon card-figcaption-nav__a "></i></a>
+                                        class="fa-solid fa-globe article__icon  "></i></a>
                             </div>
                         </nav>     
                         <p>En proceso</p>
                         <h4>Libreria</h4>
                    
                         <p>Pagina de un libreria, responsive web</p>
+                        </div>
+                        <div>
                         <p class="article__tec">HTML - CSS - Bootstrap - Javascript</p>
+                        </div>
                     </div>
 
                 
@@ -429,79 +439,91 @@ btnprojects[0].addEventListener("click", (e) => {
         projectArticles[0].innerHTML = `
 
         <div class="article">
-        <nav class="article__nav">
-            <i
-                class="fa-solid fa-folder article__icon article__icon--folder "></i>
-            <div>
-                <a href="https://github.com/BobrukFS/Proyectos-Frontend/tree/main/rating-component" target="_blank"><i
-                        class="fa-brands fa-github  article__icon  "></i></a>
-                <a href="https://bobrukfs.github.io/Proyectos-Frontend/rating-component/src/" target="_blank"><i
-                        class="fa-solid fa-globe article__icon  "></i></a>
-            </div>
-        </nav>
-        <p>Terminado</p>
-        <h4>Componente Rating</h4>
-        
-        <p>Es un componente para dar una valoracion de la aplicacion o pagina web</p>
+        <div>
+            <nav class="article__nav">
+                <i class="fa-solid fa-folder article__icon article__icon--folder "></i>
+                <div>
+                    <a href="https://github.com/BobrukFS/Proyectos-Frontend/tree/main/rating-component"
+                        target="_blank"><i class="fa-brands fa-github  article__icon  "></i></a>
+                    <a href="https://bobrukfs.github.io/Proyectos-Frontend/rating-component/src/"
+                        target="_blank"><i class="fa-solid fa-globe article__icon  "></i></a>
+                </div>
+            </nav>
+            <p>Terminado</p>
+            <h4>Componente Rating</h4>
+
+            <p>Es un componente para dar una valoracion de la aplicacion o pagina web</p>
+        </div>
+        <div>
         <p class="article__tec">HTML - CSS - Javascript</p>
-
+    </div>
     </div>
 
     <div class="article">
-        <nav class="article__nav">
-            <i class="fa-solid fa-folder article__icon article__icon--folder "></i>
-            <div>
-                <a href="https://github.com/BobrukFS/Web-Clima" target="_blank"><i
-                        class="fa-brands fa-github  article__icon  "></i></a>
-                <a href="https://bobrukfs.github.io/Web-Clima/" target="_blank"><i
-                        class="fa-solid fa-globe article__icon  "></i></a>
-            </div>
-        </nav>
-        <p>En proceso</p>
-        <h4>Web clima</h4>
-        
-        <p>Pagina de clima que consume la API de openweathermap, es responsive web.</p>
-        <p class="article__tec">HTML - CSS - SASS - Javascript</p>
 
+        <div>
+            <nav class="article__nav">
+                <i class="fa-solid fa-folder article__icon article__icon--folder "></i>
+                <div>
+                    <a href="https://github.com/BobrukFS/Web-Clima" target="_blank"><i
+                            class="fa-brands fa-github  article__icon  "></i></a>
+                    <a href="https://bobrukfs.github.io/Web-Clima/" target="_blank"><i
+                            class="fa-solid fa-globe article__icon  "></i></a>
+                </div>
+            </nav>
+
+            <p>En proceso</p>
+            <h4>Web clima</h4>
+
+            <p>Pagina de clima que consume la API de openweathermap, es responsive web.</p>
+        </div>
+        <div>
+            <p class="article__tec">HTML - CSS - SASS - Javascript</p>
+        </div>
     </div>
 
     <div class="article">
-        <nav class="article__nav">
-            <i
-                class="fa-solid fa-folder article__icon article__icon--folder "></i>
-            <div>
-                <a href="https://github.com/BobrukFS/aquario" target="_blank"><i
-                        class="fa-brands fa-github  article__icon  "></i></a>
-                <a href="#" target="_blank"><i
-                        class="fa-solid fa-globe article__icon  "></i></a>
-            </div>
-        </nav>
-        <p>En proceso</p>
-        <h4>Aquario</h4>
+        <div>
+            <nav class="article__nav">
+                <i class="fa-solid fa-folder article__icon article__icon--folder "></i>
+                <div>
+                    <a href="https://github.com/BobrukFS/aquario" target="_blank"><i
+                            class="fa-brands fa-github  article__icon  "></i></a>
+                    <a href="#" target="_blank"><i class="fa-solid fa-globe article__icon  "></i></a>
+                </div>
+            </nav>
+            <p>En proceso</p>
+            <h4>Aquario</h4>
+
+            <p>Campus virtual para los estudiantes y egresados de Fundacion Pescar que contara con un
+                entorno de comunicacion e intercambio de experiencias.</p>
+        </div>
+        <div>
+            <p class="article__tec">MERN</p>
+        </div>
+    </div>
+
+    <div class="article">
+        <div>
+            <nav class="article__nav">
+                <i class="fa-solid fa-folder article__icon article__icon--folder "></i>
+                <div>
+                    <a href="https://github.com/BobrukFS/Portafolio-2" target="_blank"><i
+                            class="fa-brands fa-github  article__icon  "></i></a>
+                    <a href="https://bobrukfs.github.io/Portafolio-2/src/" target="_blank"><i
+                            class="fa-solid fa-globe article__icon  "></i></a>
+                </div>
+            </nav>
+            <p>En proceso</p>
+            <h4>Portafolio 2</h4>
       
-        <p>Campus virtual para los estudiantes y egresados de Fundacion Pescar que contara con un entorno de comunicacion e intercambio de experiencias.</p>
-        <p class="article__tec">MERN</p>
-
-    </div>
-
-    <div class="article">
-        <nav class="article__nav">
-            <i
-                class="fa-solid fa-folder article__icon article__icon--folder "></i>
-            <div>
-                <a href="https://github.com/BobrukFS/Portafolio-2" target="_blank"><i
-                        class="fa-brands fa-github  article__icon  "></i></a>
-                <a href="https://bobrukfs.github.io/Portafolio-2/src/" target="_blank"><i
-                        class="fa-solid fa-globe article__icon  "></i></a>
-            </div>
-        </nav>
-        <p>En proceso</p>
-        <h4>Portafolio 2</h4>
-       
-        <p>Este es mi segundo portafolio</p>
+            <p>Este es mi segundo portafolio</p>
+        </div>
+        <div>
         <p class="article__tec">HTML - CSS - SASS - Javascript</p>
-
     </div>
+    </div>
+</div>
      
   
 
