@@ -298,6 +298,12 @@ h2 {
     transform: translateX(0vw);
 }
 
+nav.menu__nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .menu__enlaces {
  display: flex;
  flex-direction: column;
@@ -308,6 +314,7 @@ h2 {
     text-decoration: none;
     transform: translateY(-12rem);
     margin: 5rem;
+    margin-bottom: 0rem;
 }
 
 .menu__enlaces--contact {
@@ -325,9 +332,13 @@ h2 {
 
 .menu__enlaces--cv {
     padding: 1.5rem;
-    margin: 0rem;
+    margin-top: 5rem;
     border-radius: 1rem;
     border: 1px solid var(--secondary);
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+    
 }
 
 

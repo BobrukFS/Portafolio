@@ -189,6 +189,10 @@
 }
 
 @media (min-width: 768px) {
+    nav.menu__nav{
+        display: block;
+       
+    }
 
     main {
         margin: auto 15rem;
